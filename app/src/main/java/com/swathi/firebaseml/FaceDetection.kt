@@ -204,7 +204,7 @@ class FaceDetection : AppCompatActivity() {
             .addOnSuccessListener {
                 processFaceDetection(it)
             }.addOnFailureListener {
-                Toast.makeText(this, "process Failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "${it.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
